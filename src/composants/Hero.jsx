@@ -1,4 +1,4 @@
-import { ArrowUpRight, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import Navbar from "./navbar";
 
 const Hero = () => {
@@ -42,7 +42,7 @@ const Hero = () => {
               </button>
               <button className="border border-yellow-500 px-16 py-4 hover:bg-white hover:text-green-700 text-white font-semibold px-6 py-3 rounded-full flex items-center gap-2 transition">
                 <span className="text-xl">
-                  <Phone className="text-yellow-500"/>
+                  <Phone className="text-yellow-500" />
                 </span>{" "}
                 Contact
               </button>
@@ -56,12 +56,16 @@ const Hero = () => {
             Vous pouvez aussi nous appeler directement
           </p>
           <div className="flex flex-col gap-3 md:flex-row gap-6 mt-2">
-            <div className="text-lg">
-              <span>📱</span>
+            <div className="text-lg flex items-center gap-2">
+              <span>
+                <Phone className="text-green-700" />
+              </span>
               <span>034 17 127 42</span>
             </div>
-            <div className="text-lg">
-              <span>✉️</span>
+            <div className="text-lg flex items-center gap-2">
+              <span>
+                <Mail className="text-green-700" />
+              </span>
               <span>ask@iBizna-services.com</span>
             </div>
           </div>
