@@ -9,8 +9,6 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col min-h-screen">
-        <Navbar />
-
         {/* Contenu principal */}
         <div className="flex-1 flex flex-col justify-center px-6 md:px-16 py-16">
           <div className="max-w-3xl">
@@ -34,7 +32,7 @@ const Hero = () => {
 
             {/* Boutons */}
             <div className="flex flex-wrap items-center gap-4 mt-8 text-2xl">
-              <button className="bg-green-800 px-16 py-4 hover:bg-green-700 text-white font-semibold rounded-full flex items-center gap-2 transition">
+              <button className="bg-green-700 px-16 py-4 hover:bg-green-600 text-white font-semibold rounded-full flex items-center gap-2 transition">
                 Découvrir{" "}
                 <span className="text-xl">
                   <ArrowUpRight />

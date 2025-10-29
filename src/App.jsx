@@ -1,18 +1,19 @@
-import AvisClients from "./composants/AvisClients";
-import CommentCaMarche from "./composants/CommentCaMarche";
-import DevenezAcheteurs from "./composants/DevenezAcheteurs";
+import { Routes, Route } from "react-router-dom"; 
+import Navbar from "./composants/navbar";
 import Footer from "./composants/Footer";
-import Hero from "./composants/Hero";
-import ProduitLocaux from "./composants/ProduitLocaux";
+import Accueil from "./composants/pages/Acceuil";
+import Catalogue from "./composants/pages/Catalogue";
+import Apropos from "./composants/pages/Apropos";
 
 function App() {
   return (
     <>
-      <Hero />
-      <DevenezAcheteurs />
-      <ProduitLocaux />
-      <CommentCaMarche />
-      <AvisClients />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/catalogue" element={<Catalogue />} /> 
+        <Route path="/a-propos" element={<Apropos />} /> 
+      </Routes>
       <Footer />
     </>
   );
