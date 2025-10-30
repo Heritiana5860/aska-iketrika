@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom"; 
 import Navbar from "./composants/navbar";
 import Footer from "./composants/Footer";
-import Accueil from "./composants/pages/Acceuil";
-import Catalogue from "./composants/pages/Catalogue";
-import Apropos from "./composants/pages/Apropos";
+import Accueil from "./pages/Acceuil";
+import Catalogue from "./pages/Catalogue";
+import Apropos from "./pages/Apropos";
 
 function App() {
   return (

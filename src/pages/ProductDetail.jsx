@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Search, ShoppingCart, Heart, ArrowLeft, Truck, ShieldCheck, MessageCircle, Plus, Minus } from 'lucide-react';
-import ProductCard from '../card/ProductCard';
+import ProductCard from '../composants/card/ProductCard';
 
 // ImageGallery Component
 const ImageGallery = ({ images, productName }) => {
